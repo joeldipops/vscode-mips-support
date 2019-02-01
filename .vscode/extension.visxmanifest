@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="1.0">
+  <Metadata>
+    <Identity Version="0" Id="vscode-n64mips-support" Language="us-au" Publisher="joeldipops" />
+    <DisplayName>vscode-m64mips-support</DisplayName>
+    <Description>Syntax highlither for n64 assembly code.</Description>
+    <MoreInfo>https://github.com/joeldipops/vscode-mips-support</MoreInfo>
+    <Tags>mips, assembly, n64, homebrew</Tags>
+    <!--
+    <License></License>
+    <ReleaseNotes></ReleaseNotes>
+    <Icon></Icon>
+    <PreviewImage></PreviewImage>
+    -->
+  </Metadata>
+  
+  <InstallationTargets AllUsers="false" SystemComponent="false">
+    <Targets>
+      <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[10.0-11.0]" />
+    </Targets>
+  </InstallationTargets>
+  
+  <Dependencies>
+    <Dependency Id="another.package" Version="[1.2-2.0)" CanAutoDownload="true" IsRequired="true" />
+    <Dependency Id="Microsoft.Framework.NDP" Version="[4.0-5.0)" CanAutoDownload="false" IsRequired="true" />
+    <Dependency Id="foo.package" Version="[1.0-2.0)" DisplayName="CoolTool" Location="http://www.cooltool.com/download/cooltool.msi" AutoDownload="false" />
+  </Dependencies>
+  
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Package" Path="foo.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MEFComponent" Path="foo.dll" />
+    <Asset Type="Microsoft.VisualStudio.Sample" Path="foo\MySample.sln" />
+    <Asset Type="Microsoft.VisualStudio.Control" Path="control.pkgdef" />
+  </Assets>
+</PackageManifest>

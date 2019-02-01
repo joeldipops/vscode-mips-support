@@ -1,39 +1,36 @@
 {
-    "name": "mips",
-    "displayName": "MIPS Support",
-    "description": "Provides syntax highlighting and snippets for MIPS assembly language",
-    "version": "0.0.2",
-    "publisher": "kdarkhan",
-    "homepage": "https://github.com/kdarkhan/vscode-mips-support",
-    "icon": "images/icon.png",
+    "name": "n64mips",
+    "displayName": "n64 MIPS Highlighter",
+    "description": "Syntax highlighter for n64 assembly code",
+    "version": "0.0.0",
+    "publisher": "joeldipops",
+    "homepage": "https://github.com/joeldipops/vscode-mips-support",
+    "icon": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/kdarkhan/vscode-mips-support"
+        "url": "https://github.com/joeldipops/vscode-mips-support"
     },
     "bugs": {
-        "url": "https://github.com/kdarkhan/vscode-mips-support/issues",
-        "email": "darkhanu@gmail.com"
+        "url": "https://github.com/joeldipops/vscode-mips-support/issues"
     },
     "engines": {
         "vscode": "^1.5.0"
     },
     "categories": [
-        "Languages",
-        "Snippets"
+        "Programming Languages"
     ],
     "contributes": {
         "languages": [
             {
-                "id": "mips",
+                "id": "n64mips",
                 "aliases": [
-                    "MIPS Assembly",
-                    "mips"
+                    "n64 Assembly",
+                    "MIPS R4300i"
                 ],
                 "extensions": [
-                    ".s",
                     ".mips",
-                    ".spim",
-                    ".asm"
+                    ".inc",
+                    "n64mips"
                 ],
                 "configuration": "./language-configuration.json"
             }
